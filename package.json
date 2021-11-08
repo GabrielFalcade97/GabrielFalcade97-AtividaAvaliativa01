@@ -1,0 +1,14 @@
+{
+  "name": "atividade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "filtroFaturas.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.3.1"
+  }
+}
