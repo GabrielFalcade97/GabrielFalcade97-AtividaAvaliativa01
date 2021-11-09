@@ -30,4 +30,17 @@ describe('FiltroFatura', () => {
         );
     });
 
+    test('filtrando as faturas com valor >=2500 e <3000 com data inclusão cliente <=dois meses atrás', () => {
+        var resultado = filtroFatura.removerFaturasMa2500_Me3000(lista_Faturas);
+        var codigos = resultado.map((elem) => elem.codigo);
+
+        expect(resultado.length).toBe(9);
+        
+        expect(codigos).toEqual(
+            [
+                1, 2, 3, 4, 5, 6, 8, 9, 10
+            ]
+        );
+    });;
+
 });

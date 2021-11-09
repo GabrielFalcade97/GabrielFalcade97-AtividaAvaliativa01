@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636422016455" clover="3.2.0">
-  <project timestamp="1636422016455" name="All files">
-    <metrics statements="22" coveredstatements="22" conditionals="3" coveredconditionals="3" methods="6" coveredmethods="6" elements="31" coveredelements="31" complexity="0" loc="22" ncloc="22" packages="1" files="3" classes="3"/>
+<coverage generated="1636457009050" clover="3.2.0">
+  <project timestamp="1636457009050" name="All files">
+    <metrics statements="22" coveredstatements="22" conditionals="3" coveredconditionals="3" methods="7" coveredmethods="7" elements="32" coveredelements="32" complexity="0" loc="22" ncloc="22" packages="1" files="3" classes="3"/>
     <file name="filtroFatura.js" path="C:\Users\Gabriel Falcade\Desktop\Tópicos de Computação\Atividade Avaliativa_1\Atividade\src\filtroFatura.js">
-      <metrics statements="6" coveredstatements="6" conditionals="3" coveredconditionals="3" methods="4" coveredmethods="4"/>
+      <metrics statements="6" coveredstatements="6" conditionals="3" coveredconditionals="3" methods="5" coveredmethods="5"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="7" count="10" type="stmt"/>
       <line num="13" count="1" type="stmt"/>
       <line num="15" count="10" type="cond" truecount="3" falsecount="0"/>
-      <line num="21" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
     </file>
     <file name="lista_faturas.js" path="C:\Users\Gabriel Falcade\Desktop\Tópicos de Computação\Atividade Avaliativa_1\Atividade\src\lista_faturas.js">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>

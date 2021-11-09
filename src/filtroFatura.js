@@ -16,6 +16,11 @@ class FiltroFaturas {
         );
 
     }
+
+    removerFaturasMa2500_Me3000(faturas){
+
+    }
+
 }
 
 module.exports = FiltroFaturas
