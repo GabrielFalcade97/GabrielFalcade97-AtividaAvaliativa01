@@ -27,17 +27,7 @@ class FiltroFaturas {
     }
 
     removerFaturasMa4000Sul(faturas){
-        var filtra = [];
-
-        faturas.forEach(element =>{
-            if(!(element.valor > 4000 && (element.cliente.estado == 'PR'
-                || element.cliente.estado == 'SC'  
-                || element.cliente.estado == 'RS'))){
-                    filtra.push(element);
-                }
-        });
-
-        return filtra;
+        return faturas.filter((elem)=> !(elem.valor > 4000 && util.arrayIdentElement(elem.cliente.estado, ['PR', 'SC', 'RS'])));
     }
 
 }

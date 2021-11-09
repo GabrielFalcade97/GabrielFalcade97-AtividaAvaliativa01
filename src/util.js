@@ -22,6 +22,10 @@ class Utils {
 
         return mes + '/' + dia + '/' + ano;
     }
+
+    arrayIdentElement(elemento, array){
+        return array.filter(elem => elem == elemento).length >= 1;
+    }
 }
 
 module.exports = Utils;
