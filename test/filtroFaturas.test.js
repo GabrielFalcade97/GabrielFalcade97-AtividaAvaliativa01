@@ -16,4 +16,18 @@ describe('FiltroFatura', () => {
             ]
         );
     });
+
+    test('filtrando as faturas com valor >= 2000 e < 2500 e com data <= um mês atrás',() => {
+        var resultado = filtroFatura.removerFaturasMa2000_Me2500(lista_Faturas);
+        var codigos = resultado.map((elem) => elem.codigo);
+
+        expect(resultado.length).toBe(8);
+        
+        expect(codigos).toEqual(
+            [
+                1, 2, 3, 6, 7, 8, 9, 10
+            ]
+        );
+    });
+
 });
