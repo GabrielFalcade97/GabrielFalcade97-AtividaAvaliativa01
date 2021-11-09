@@ -19,15 +19,15 @@ class FiltroFaturas {
 
     removerFaturasMa2500_Me3000(faturas){
         var filtra = [];
-        var mAtras = util.mesesAtras(2);
+        var doisMeses = util.mesesAtras(2);
 
-        faturas.forEach(element =>{
-            if(!(element.valor >= 2500 && element.valor < 3000 && util.diferencaEmDias(element.cliente.dataInclusao, mAtras) <=60)){
-                filtra.push(element);
-            }
-        });
-        return filtra;
+        return faturas.filter((elem)=> !(elem.valor >= 2500 && elem.valor < 3000 && util.diferencaEmDias(elem.cliente.dataInclusão, doisMeses) <=60)
+        );
 
+    }
+
+    removerFaturasMa4000Sul(faturas){
+        
     }
 
 }

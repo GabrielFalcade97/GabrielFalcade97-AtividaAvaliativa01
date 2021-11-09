@@ -34,13 +34,26 @@ describe('FiltroFatura', () => {
         var resultado = filtroFatura.removerFaturasMa2500_Me3000(lista_Faturas);
         var codigos = resultado.map((elem) => elem.codigo);
 
+        expect(resultado.length).toBe(10);
+        
+        expect(codigos).toEqual(
+            [
+                1, 2, 3, 4, 5,6, 7, 8, 9, 10
+            ]
+        );
+    });;
+
+    test('filtrando as faturas com valor > 4000 e cliente dos estados do sul', () =>{
+        var resultado = filtroFatura.removerFaturasMa4000Sul(lista_Faturas);
+        var codigos = resultado.map((elem) => elem.codigo);
+
         expect(resultado.length).toBe(8);
         
         expect(codigos).toEqual(
             [
-                1, 2, 3, 4, 5, 8, 9, 10
+                1, 2, 3, 4, 5, 6, 7, 8
             ]
-        );
-    });;
+        )
+    });
 
 });
