@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for filtroFatura.js</title>
+    <title>Code coverage report for utils.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> filtroFatura.js</h1>
+        <h1><a href="index.html">All files</a> utils.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">41.66% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>5/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">41.66% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>5/12</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -81,18 +81,15 @@
 <a name='L22'></a><a href='#L22'>22</a>
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -100,52 +97,46 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const Utils = require('./util');
-const util = new Utils();
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">class Utils {
+<span class="fstat-no" title="function not covered" >    di</span>ferencaDias(dat1, dat2){
+        const date01 = <span class="cstat-no" title="statement not covered" >new Date(dat1);</span>
+        const date02 = <span class="cstat-no" title="statement not covered" >new Date(dat2);</span>
 &nbsp;
-class FiltroFaturas {
-    removerFaturasMenor2000(faturas) {
+        const difeTempo = <span class="cstat-no" title="statement not covered" >Math.abs(date02 - date01);</span>
+        const difeDias = <span class="cstat-no" title="statement not covered" >Math.ceil(difeTempo / (1000* 60 * 60 * 24));</span>
 &nbsp;
-        return faturas.filter((elem) =&gt; elem.valor &gt;= 2000);
-&nbsp;
+<span class="cstat-no" title="statement not covered" >        return difeDias;</span>
     }
 &nbsp;
-    removerFaturasMa2000_Me2500(faturas) {
+    dataMesesAtras(meses){
+        var pres = new Date();
+        var mesesAtras = new Date(pres.setMonth(pres.getMonth() - meses));
 &nbsp;
-        var filtra = [];
-        var mAtras = util.mesesAtras(1);
+        var dia = String(mesesAtras.getDate()).padStart(2, '0');
+        var mes = String(mesesAtras.getMonth() + 1).pagStart(2, '0');
+        var ano = <span class="cstat-no" title="statement not covered" >mesesAtras.getFullYear();</span>
 &nbsp;
-        faturas.forEach(element =&gt; {
-            if(!(element.valor &gt;= 2000 &amp;&amp; element.valor &lt; 2500 &amp;&amp;
-                util.diferencaEmDias(element.data, mAtras) &lt;= 30)){
-                filtra.push(element);
-            }
-        });
-&nbsp;
-        return filtra;
+<span class="cstat-no" title="statement not covered" >        return mes + '/' + dia + '/' + ano;</span>
 &nbsp;
     }
 }
 &nbsp;
-module.exports = FiltroFaturas</pre></td></tr></table></pre>
+module.exports = Utils;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Nov 08 2021 22:27:18 GMT-0300 (Horário Padrão de Brasília)
+                at Mon Nov 08 2021 22:06:29 GMT-0300 (Horário Padrão de Brasília)
             </div>
         </div>
         <script src="prettify.js"></script>
