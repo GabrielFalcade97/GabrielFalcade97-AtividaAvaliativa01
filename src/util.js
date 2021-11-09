@@ -1,6 +1,5 @@
 class Utils {
-    diferencaEmDias(dt01, dt02){
-        
+    diferencaEmDias(dt01, dt02){      
         const date01 = new Date(dt01);
         const date02 = new Date(dt02);
 
@@ -11,7 +10,6 @@ class Utils {
     }
 
     mesesAtras(meses){  
-
         var pres = new Date();
 
         var mesesAtras = new Date(pres.setMonth(pres.getMonth()-meses));

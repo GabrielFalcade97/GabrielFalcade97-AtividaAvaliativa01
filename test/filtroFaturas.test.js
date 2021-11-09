@@ -41,7 +41,7 @@ describe('FiltroFatura', () => {
                 1, 2, 3, 4, 5,6, 7, 8, 9, 10
             ]
         );
-    });;
+    });
 
     test('filtrando as faturas com valor > 4000 e cliente dos estados do sul', () =>{
         var resultado = filtroFatura.removerFaturasMa4000Sul(lista_Faturas);
