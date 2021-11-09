@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636474417991" clover="3.2.0">
-  <project timestamp="1636474417991" name="All files">
-    <metrics statements="25" coveredstatements="25" conditionals="6" coveredconditionals="6" methods="9" coveredmethods="9" elements="40" coveredelements="40" complexity="0" loc="25" ncloc="25" packages="1" files="3" classes="3"/>
+<coverage generated="1636475070708" clover="3.2.0">
+  <project timestamp="1636475070708" name="All files">
+    <metrics statements="30" coveredstatements="30" conditionals="12" coveredconditionals="12" methods="10" coveredmethods="10" elements="52" coveredelements="52" complexity="0" loc="30" ncloc="30" packages="1" files="3" classes="3"/>
     <file name="filtroFatura.js" path="C:\Users\Gabriel Falcade\Desktop\Tópicos de Computação\Atividade Avaliativa_1\Atividade\src\filtroFatura.js">
-      <metrics statements="9" coveredstatements="9" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="7"/>
+      <metrics statements="14" coveredstatements="14" conditionals="12" coveredconditionals="12" methods="8" coveredmethods="8"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="7" count="10" type="stmt"/>
@@ -12,7 +12,12 @@
       <line num="21" count="1" type="stmt"/>
       <line num="22" count="1" type="stmt"/>
       <line num="24" count="10" type="cond" truecount="3" falsecount="0"/>
-      <line num="35" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="33" count="10" type="cond" truecount="6" falsecount="0"/>
+      <line num="36" count="9" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="45" count="1" type="stmt"/>
     </file>
     <file name="lista_faturas.js" path="C:\Users\Gabriel Falcade\Desktop\Tópicos de Computação\Atividade Avaliativa_1\Atividade\src\lista_faturas.js">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>

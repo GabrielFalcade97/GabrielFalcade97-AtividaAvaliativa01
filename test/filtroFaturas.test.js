@@ -47,11 +47,11 @@ describe('FiltroFatura', () => {
         var resultado = filtroFatura.removerFaturasMa4000Sul(lista_Faturas);
         var codigos = resultado.map((elem) => elem.codigo);
 
-        expect(resultado.length).toBe(8);
+        expect(resultado.length).toBe(9);
         
         expect(codigos).toEqual(
             [
-                1, 2, 3, 4, 5, 6, 7, 8
+                1, 2, 3, 4, 5, 6, 7, 8, 10 
             ]
         )
     });
